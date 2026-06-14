@@ -25,6 +25,13 @@ sudo apt install ./roboseasy-studio_0.5.1-0.0.1_amd64.deb
 - Linux .deb (정통 Debian 패키징, 설치 시 venv + pip install)
 - Windows 인스톨러 (Inno Setup, Python 자동 설치 + venv + pip install + 위저드 안 진행 표시)
 
+### Linux .deb 업데이트 (2026-06-14)
+
+- EEF ↔ 텔레오퍼레이션 속도 분리 (Goal_Velocity decouple — EEF 속도 설정이 텔레오퍼레이션 추종을 느리게 하던 문제 해결)
+- EEF 관절 제어 UI 개선 (관절 grid 스크롤 + 현재 직교좌표 한 줄 표시)
+- EEF·텔레오퍼레이션 연결 버튼을 캘리브레이션식 "🔌 연결" 단일 토글로 통합
+- Supabase 로그인 B안(Edge Function) 이관 — 약관 1회 동의 후 반복 안 함, 앱/.deb 에 키 미포함
+
 ## 시스템 요구사항
 
 | 항목 | Windows | Linux |
@@ -50,5 +57,5 @@ sha256sum -c roboseasy-studio_0.5.1-0.0.1_amd64.deb.sha256
 
 ### 체크섬
 
-- `.deb` SHA256: `2792d69ae5d6d710bb0f6b83140aa2f7bb01fe6562cb7904cc43f8f9e33fd134`
+- `.deb` SHA256: `04f85282a046461a5d938be202bdc4b530e5148754bf3cf41718d1733ad67f94`
 - `.exe` SHA256: `1b54d0606e6760295419005bdb4861ac8c6dedd097d07fdf9ef9593dce4afa4e`
